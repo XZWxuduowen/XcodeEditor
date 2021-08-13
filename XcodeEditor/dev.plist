@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compileBitcode</key>
+	<false/>
+	<key>destination</key>
+	<string>export</string>
+
+<!-- 	method：字符串，为打包的类型，分为app-store，ad-hoc，enterprise和development，根据自己实际打包情况填写。 -->
+
+	<key>method</key>
+	<string>development</string>
+
+<!-- provisioningProfiles：字典，Xcode9需要，键值对为{bundleid：描述文件名}，描述文件名最好使用其对应的UUID。 -->
+
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.originmood.hw</key>
+		<string>hw_dev_20201231</string>
+	</dict>
+
+<!-- signingCertificate：证书类型，开发环境为iPhone Developer / Apple Developer，生产环境为iPhone Distribution。-->
+
+	<key>signingCertificate</key>
+	<string>iPhone Developer</string>
+
+<!-- signingStyle：自动还是手动（manual与automatic），填写manual即可。-->	
+
+	<key>signingStyle</key>
+	<string>manual</string>
+
+<!-- 	stripSwiftSymbols：出包是否添加swift依赖库填写为YES。-->
+
+	<key>stripSwiftSymbols</key>
+	<true/>
+
+<!-- 	teamID：为开团队ID，在钥匙串中点击证书详情可以查看到。-->
+
+	<key>teamID</key>
+	<string>9XFVQQQLUU</string>
+	<key>thinning</key>
+	<string>&lt;none&gt;</string>
+
+
+<!-- uploadBitcode：为YES即可。
+uploadSymbols：为YES即可。 -->
+
+</dict>
+</plist>
